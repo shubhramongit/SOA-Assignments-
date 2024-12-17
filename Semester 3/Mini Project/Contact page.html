@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        body {
+            padding: 0;
+            font-family: Arial, sans-serif;
+                background-color: rgba(20, 107, 107, 0.594);
+         }
+         nav {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 10px 0;
+         }
+         header {
+            
+            
+            background-position: center;
+            height: 100px;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            display: flex;
+           
+        }
+        input[type='text']{
+            background-color: white;
+            color: yellow;
+        }
+        input[type='email']{
+            background-color: white;
+            color: fuchsia;
+        }
+        #message{
+            background-color: white;
+            color: red;
+            font-weight: bold;
+        }
+        h2{
+            color: blue;
+        }
+        /* h1{
+            text-align: center;
+        } */
+       
+    </style>
+</head>
+<body>
+    <header style="color: white; text-align: center; display: flex; flex-direction: column; justify-content: center;">
+        <nav style="background: rgba(73, 104, 112, 0.7); padding: 10px 0;">
+            <ul style="list-style: none; padding: 0; display: flex; justify-content: center;">
+                <li><a href="Home Page.html" style="color: white; text-decoration: underline; font-size: 18px; padding: 0 15px;">Home</a></li>
+                <li><a href="about me Page.html" style="color: white; text-decoration: underline; font-size: 18px; padding: 0 15px;">About Me</a></li>
+                <li><a href="Portfolio page.html" style="color: white; text-decoration: underline; font-size: 18px; padding: 0 15px;">Portfolio</a></li>
+                <li><a href="Contact page.html" style="color: white; text-decoration: underline; font-size: 18px; padding: 0 15px;">Contact</a></li>
+            </ul>
+        </nav>
+        <h1 style="color: black;"><i>Contact</i></h1>
+    </header>
+    <section>
+        <h2>Get in Touch</h2>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required><br><br>
+            <p>Message:</p>
+            <label for="message"></label>
+            <textarea id="message" cols="50" rows="10"  name="message" required></textarea><br>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+</body>
+</html>
