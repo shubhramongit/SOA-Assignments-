@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Largest and Smallest Finder</title>
+</head>
+<body>
+    <h1>Find Second Largest and Second Smallest Numbers</h1>
+    <p>Enter numbers separated by commas:</p>
+    
+    <input type="text" id="numbers" placeholder="e.g., 10, 20, 30, 40">
+    <button onclick="findSecondLargestAndSmallest()">Find</button>
+    
+    <p id="result"></p>
+    
+    <script>
+        function findSecondLargestAndSmallest() {
+            const input = document.getElementById("numbers").value;
+            const resultElement = document.getElementById("result");
+            
+            
+            const array = input.split(",").map(Number).filter(n => !isNaN(n));
+            
+            if (array.length < 2) {
+                resultElement.textContent = "Please enter at least two valid numbers.";
+                return;
+            }
+
+            array.sort((a, b) => a - b);
+
+            const secondSmallest = array[1];
+            const secondLargest = array[array.length - 2];
+
+            resultElement.textContent = `Second Smallest: ${secondSmallest}, Second Largest: ${secondLargest}`;
+        }
+    </script>
+</body>
+</html>

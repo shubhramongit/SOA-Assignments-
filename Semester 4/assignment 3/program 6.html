@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter Odd Numbers</title>
+</head>
+<body>
+    <h1>Filter Odd Numbers</h1>
+    <label for="numbersInput">Enter numbers separated by commas:</label>
+    <input type="text" id="numbersInput" placeholder="e.g., 1, 2, 3, 4, 5">
+    <button onclick="getOddNumbers()">Get Odd Numbers</button>
+    <h2>Result:</h2>
+    <p id="result"></p>
+
+    <script>
+        function getOddNumbers() {
+            // Get the input string and convert it to an array of numbers
+            const input = document.getElementById('numbersInput').value;
+            const numbers = input.split(',').map(num => parseInt(num.trim()));
+
+            // Filter the odd numbers
+            const oddNumbers = numbers.filter(num => num % 2 !== 0);
+
+            // Display the result
+            document.getElementById('result').innerText = `Odd Numbers: [${oddNumbers}]`;
+        }
+    </script>
+</body>
+</html>

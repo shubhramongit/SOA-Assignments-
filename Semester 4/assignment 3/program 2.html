@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum of First 1000 Prime Numbers</title>
+</head>
+<body>
+    <h1>Sum of First 1000 Prime Numbers</h1>
+    <button onclick="calculateSum()">Calculate</button>
+    <h2>Result:</h2>
+    <p id="sumResult"></p>
+
+    <script>
+        function isPrime(num) {
+            if (num < 2) return false;
+            for (let i = 2; i <= Math.sqrt(num); i++) {
+                if (num % i === 0) return false;
+            }
+            return true;
+        }
+
+        function calculateSum() {
+            let count = 0;
+            let num = 2;
+            let sum = 0;
+
+            while (count < 1000) {
+                if (isPrime(num)) {
+                    sum += num;
+                    count++;
+                }
+                num++;
+            }
+
+            document.getElementById('sumResult').innerText = `The sum of the first 1000 prime numbers is: ${sum}`;
+        }
+    </script>
+</body>
+</html>
