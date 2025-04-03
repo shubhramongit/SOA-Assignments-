@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Find Second Largest and Smallest</title>
+</head>
+<body>
+    <h2>Find Second Largest and Second Smallest Number</h2>
+    <p id="result"></p>
+    <script>
+        function findNumbers() {
+            let arr = [10, 5, 8, 20, 15, 3, 25]; 
+            let uniqueArr = [...new Set(arr)].sort((a, b) => a - b);
+            let secondSmallest = uniqueArr[1];
+            let secondLargest = uniqueArr[uniqueArr.length - 2];
+            document.getElementById("result").innerText = "Second Smallest: " + secondSmallest + ", Second Largest: " + secondLargest;
+        }
+        findNumbers();
+    </script>
+</body>
+</html>
