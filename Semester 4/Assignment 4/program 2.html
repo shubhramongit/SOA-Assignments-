@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Event Handling</title>
+    <style>
+        div{
+            background-color: pink;
+            border: 2px solid brown;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        MODERN WEB DEVELOPMENT
+    </div>
+    <script src="jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('div').click(function(){
+                $(this).text('CLICKED!!');
+            })
+            $('div').dblclick(function(){
+                $(this).css('background-color','red');
+            })
+            $('div').mouseenter(function(){
+                $(this).css('border','2px solid green');
+            })
+            $('div').mouseleave(function(){
+                $(this).css('border-color','blue');
+            })
+        })
+    </script>
+</body>
+</html>

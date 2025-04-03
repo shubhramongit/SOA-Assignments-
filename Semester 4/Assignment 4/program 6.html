@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zebra Striping with jQuery</title>
+    
+</head>
+<body>
+    <table border="2">
+        <tr>
+            <th>Name</th>
+            <th>Attendance(%)</th>
+        </tr>
+        <tr>
+            <td>Suvam</td>
+            <td>70</td>
+        </tr>
+        <tr>
+            <td>Swayam</td>
+            <td>33</td>
+        </tr>
+        <tr>
+            <td>Shubram</td>
+            <td>90</td>
+        </tr>
+        <tr>
+            <td>shreemaya</td>
+            <td>100</td>
+        </tr>
+    </table>
+    <br>
+    <button>Click to Resize</button>
+    <script src="jquery.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("table tr:odd").css("background-color", "teal");
+            $("button").click(function() {
+                $(this).width(300).height(500);
+            });
+        });
+    </script>
+</body>
+</html>

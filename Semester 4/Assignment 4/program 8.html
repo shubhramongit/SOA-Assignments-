@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Mouse Events</title>
+    
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi placeat iure, repellat omnis quibusdam labore accusamus deserunt eligendi veritatis autem!</p>
+
+    <p class="a">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum doloribus assumenda molestiae et ad iste. Est rerum illo aperiam magni!</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum doloribus assumenda molestiae et ad iste. Est rerum illo aperiam magni!</p>
+
+    <p class="a">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum doloribus assumenda molestiae et ad iste. Est rerum illo aperiam magni!</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum doloribus assumenda molestiae et ad iste. Est rerum illo aperiam magni!</p>
+
+    <script src="jquery.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".a").on("mouseenter", function() {
+                $(this).css({"font-weight": "bolder", "color": "red"});
+            });           
+            $(".a").on("mouseleave", function() {
+                $(this).css({"font-weight": "bold", "color": "green"});
+            });
+        });
+    </script>
+</body>
+</html>

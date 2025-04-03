@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Class Toggle</title>
+    <style>
+        .highlighted {
+            background: purple;
+        }
+
+        .dim {
+            opacity: 0.5;
+        }
+    </style>
+</head>
+
+<body>
+    <div>This is a div</div>
+    <br>
+    <button class="high">Click to Highlight</button>
+    <button class="dim1">Click to Dim</button>
+    <script src="jquery.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".high").click(function () {
+                $('div').removeClass("dim")
+                $('div').addClass("highlighted");
+            })
+            $(".dim1").click(function () {
+                $('div').removeClass("highlighted");             
+                $('div').addClass("dim")
+            })
+        });
+    </script>
+</body>
+
+</html>

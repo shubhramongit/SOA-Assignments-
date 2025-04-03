@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOA Batch 2023</title>
+</head>
+<body>
+    <h1 style="color :grey">WELCOME TO SOA BATCH OF 2023</h1>
+    <script src="jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('h1').click(function(){
+                var color = ["red","blue","green","yellow","orange","indigo"];
+                var random = color[Math.floor(Math.random()*color.length)];
+                $(this).css("color",random);
+            })
+        })
+    </script>
+</body>
+</html>

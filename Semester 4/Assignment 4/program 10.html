@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Color & Toggle</title>
+
+</head>
+<body>
+    <h2>Click to chnage background color</h2>
+    <button id="red">Red</button>
+    <button id="blue">Blue</button>
+    <button id="green">Green</button>
+    <br>
+    <h2>Below para is inside a div</h2>   
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi neque alias at dignissimos ipsam officiis hic. Mollitia quod nulla minima?</div>
+<br>
+    <button id="div">Click to Hide/Show div</button>
+
+    <script src="jquery.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            $("#red").click(function() {
+                $("body").css("background-color", "red");
+            });
+            
+            $("#blue").click(function() {
+                $("body").css("background-color", "blue");
+            });
+            
+            $("#green").click(function() {
+                $("body").css("background-color", "green");
+            });
+            
+
+            $("#div").click(function() {
+                $("div").toggle();
+            });
+        });
+    </script>
+</body>
+</html>

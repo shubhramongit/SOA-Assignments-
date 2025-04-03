@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery List Manipulation</title>
+
+</head>
+<body>
+    <h2>Fruits</h2>
+    <ul>
+        <li id="a"><b>MANGO</b></li>
+        <li><b>STRAWBERRIES</b></li>
+        <li><b>BLUEBERRIES</b></li>
+        <li id="b"><b>BLACKBERRIES</b></li>
+        <li><b>BANANA</b></li>
+    </ul>
+    <script src="jquery.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            $("#a").css("color", "green");
+            $("#b").css("color", "yellow");
+
+            $("body").append('<div><h1>This is a heading</h1><p>This is a paragraph.</p></div>');
+        });
+    </script>
+</body>
+</html>
