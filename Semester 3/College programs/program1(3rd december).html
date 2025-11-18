@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="" method="post">
+        <label> Pick a number 1 and 10
+            <input type="number" id="num" min="1" max="10" step="1">
+        </label><br>
+
+
+        <label> Pick a number 0 and 1
+            <input type="number" id="num" min="0" max="1" step="0.1" placeholder="0.5">
+        </label><br>
+
+
+        <label> How much would you like your product?<br>Not at all
+            <input type="range" id="likes" min="0" max="5" step="0.1">
+
+        </label><br>
+
+        <label> when can you return the book
+            <input type="date" id="returndate">
+        </label><br>
+        <label> what your favorite color
+            <input type="color" id="rfavoritecolor">
+        </label><br>
+        <label> search
+            <input type="search" id="s">
+        </label><br>
+        <label for="userpassword"> Enter your password</label>
+        <input type="password" id="userpassword" size="10" maxlength="8">
+        <br>
+        <input type="submit" value="Send Form Data"><br>
+        <input type="reset" value="Clear Form Data"><br>
+        <label> Check to receive SPAM email
+            <input type="checkbox" id="checkbox">
+        </label><br>
+        <p>Check all sysmpots that you are experiening</p>
+        <label><input type="checkbox" name="symptoms" value="nausea">Nausea</label>
+        <label><input type="checkbox" name="symptoms" value="lightheadedness">lightheadedness</label>
+        <label><input type="checkbox" name="symptoms" value="fever">fever</label>
+        <label><input type="checkbox" name="symptoms" value="headache">headache</label>
+        <p>Select a color</p>
+        <label style="display: block;"><input type="radio" name="color" value="red">Red</label>
+        <label style="display: block;"><input type="radio" name="color" value="blue">blue</label>
+        <label style="display: block;"><input type="radio" name="color" value="green">green</label>
+        <input type="image" src=id="submitformbtn"><br>
+
+        <input type="button" id="verify" value="verify" onelick="verifydata()"><br>
+        <input type="hidden" id="uid" value="1402"><br>
+        <label>PLease select a file for upload
+            <input type="file" name="fileupload">
+        </label><br>
+        <button type="custom"><img src="recyecel.gif" alt="img"></button><br>
+        <button type="submit"><b><i>Submit button</i></b></button><br>
+        <label for="question4" style="display: block;">Please comment on our customer</label>
+        <textarea name="question4" rows="10" cols="60"> enter your answer here</textarea>
+        <label for="location">PLease pick a travel destinations</label>
+        <select  id="location" size="2">
+            <option>INDIANA</option>
+            <option>FUJI</option>
+            <option>TIMBAKU</option>
+            <option>ALASKA</option>
+        </select><br>
+        <select  id="courses">
+            <option value="p101">Programming 101</option>
+            <option value="e312">Economics 312</option>
+            <option value="pe221">Physical eductaion 221</option>
+        </select>
+    </form>
+</body>
+
+</html>
