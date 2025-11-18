@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Background Image Change on Hover</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f4f4f4;
+    }
+
+    .image-box {
+      width: 300px;
+      height: 200px;
+      background-image: url('taj.jpeg');
+      background-size: cover;
+      background-position: center;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      transition: background-image 0.3s ease;
+    }
+
+   
+    .image-box:hover {
+      background-image: url('redfort.jpeg');
+    }
+  </style>
+</head>
+<body>
+  <div class="image-box"></div>
+</body>
+</html>
